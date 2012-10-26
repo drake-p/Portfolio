@@ -1,0 +1,224 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      exljbris
+ * License URL: http://www.fontspring.com/fflicense/exljbris
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Museo';
+    src: url('museo-font/Museo300-Regular-webfont.eot');
+    src: url('museo-font/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-font/Museo300-Regular-webfont.woff') format('woff'),
+         url('museo-font/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('museo-font/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('museo-font/Museo500-Regular-webfont.eot');
+    src: url('museo-font/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-font/Museo500-Regular-webfont.woff') format('woff'),
+         url('museo-font/Museo500-Regular-webfont.ttf') format('truetype'),
+         url('museo-font/Museo500-Regular-webfont.svg#Museo700Regular') format('svg');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('museo-font/Museo700-Regular-webfont.eot');
+    src: url('museo-font/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-font/Museo700-Regular-webfont.woff') format('woff'),
+         url('museo-font/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('museo-font/Museo700-Regular-webfont.svg#Museo700Regular') format('svg');
+    font-weight: 700;
+}
+/*
+div {
+	border: 1px solid #ff0000;
+}*/
+
+body {
+	background-color: #ebecff;
+	font-family: Helvetica, Verdana, Geneva, Arial, sans-serif;
+	color: #001727;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ol, ul, dl {
+	margin: 0;
+	padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Museo;
+	font-weight: 500;
+}
+
+.header {
+	background: #001727 url('images/header-colors.gif') repeat-x bottom;
+	border-top: 10px solid #00090f;
+}
+
+.header #innards{
+	color: #82828d;
+	background: url('images/koch-logo.PNG') no-repeat center bottom;
+	text-align: center;
+}
+.header h1{
+	font-size: 60px;
+	font-family: Megrim;
+}
+
+.container {
+	background: url('images/koch-content.png') no-repeat bottom center;
+}
+
+.container #innards{
+	width: 960px;
+	margin: 0 auto;	
+}
+
+#menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#menu li{
+  display: inline;
+  font: 300 30px Museo;
+}
+#menu a{
+  display: inline-block;
+  padding: 5px 50px;
+  text-decoration: none;
+  color: #b8b9c8;
+  text-transform: uppercase;
+}
+
+#menu a:hover{
+	color: #ff9600;
+}
+
+#slider{
+	position: relative;
+	background: url('images/feature.jpg');
+	width: 958px;
+	height: 300px;	
+	border: 1px solid #ccc;
+}
+
+#rarrow{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 38px;
+	height: 38px;
+	background: url('images/arrow-sprites.png') no-repeat top left;
+}
+
+#rarrow:hover{
+	background: url('images/arrow-sprites.png') no-repeat top right;
+}
+
+#larrow{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 38px;
+	height: 38px;
+	background: url('images/arrow-sprites.png') no-repeat bottom left;
+}
+
+#larrow:hover{
+	background: url('images/arrow-sprites.png') no-repeat bottom right;
+}
+
+.column {
+	float: left;
+	width: 300px;
+	padding: 10px;
+}
+
+#gallery {
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 50px;
+}
+
+.thumbnail{
+	position: relative;
+	float: left;
+	margin: 12px;
+	padding: 5px;
+	width: 204px;
+	height: 204px;
+	background-color: #fff;
+	border: 1px solid #c5c5c5;
+	box-shadow: 0 5px 20px -5px #000;
+}
+.thumbnail img {
+	display: block;
+}
+
+.thumbnail #pop {
+	position: relative;
+	top: -60px;
+}
+
+.footer{
+	background: #001727 url('images/footer-colors.gif') repeat-x;
+	color: #82828d;
+	overflow: auto;
+}
+
+.footer #innards {
+	background: url('images/koch-footer.PNG') no-repeat center top;
+	width: 960px;
+	overflow: auto;
+	margin: 0 auto;	
+}
+
+.footer #text1{
+	float: left;
+	width: 300px;
+	margin-top: 20px
+}
+
+.footer #text2{
+	float: right;
+	text-align: right;
+	width: 300px;
+	margin-top: 20px
+}
+
+.footer #portrait{
+	float: right;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.footer #copyrt{
+	background-color: #00090f;
+	text-align: center;
+	color: #47474d;
+}
