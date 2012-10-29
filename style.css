@@ -98,7 +98,7 @@ a:focus, a:hover {
 }
 
 .container {
-	background: url('images/koch-content.png') no-repeat bottom center;
+	background: url('images/koch-content.png') no-repeat center bottom;
 }
 
 .container #innards{
@@ -133,7 +133,7 @@ a:focus, a:hover {
 	background: url('images/slider1.jpg');
 	width: 958px;
 	height: 300px;	
-	border: 1px solid #ccc;
+	border: 4px solid #a7a8b6;
 	margin: 0 0 40px;
 }
 
@@ -143,17 +143,14 @@ a:focus, a:hover {
 	position: absolute;
 	top: 110px;
 	left: 958px;
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
 	
-	border-left: 40px solid #a7a8b6;
+	border-left: 20px solid #a7a8b6;
 }
 
-#rarrow:hover {
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	
-	border-left: 40px solid #001524;
+#rarrow:hover {	
+	border-left: 20px solid #001524;
 }
 
 #larrow {
@@ -162,45 +159,16 @@ a:focus, a:hover {
 	position: absolute;
 	top: 110px;
 	right: 958px;
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
 	
-	border-right: 40px solid #a7a8b6;
+	border-right: 20px solid #a7a8b6;
 }
 
-#larrow:hover {
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	
-	border-right: 40px solid #001524;
+#larrow:hover {	
+	border-right: 20px solid #001524;
 }
 
-/*#rarrow{
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	width: 38px;
-	height: 38px;
-	background: url('images/arrow-sprites.png') no-repeat top left;
-
-
-#rarrow:hover{
-	background: url('images/arrow-sprites.png') no-repeat top right;
-}
-
-#larrow{
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	width: 38px;
-	height: 38px;
-	background: url('images/arrow-sprites.png') no-repeat bottom left;
-}
-
-#larrow:hover{
-	background: url('images/arrow-sprites.png') no-repeat bottom right;
-}
-*/
 .column {
 	float: left;
 	width: 300px;
@@ -234,6 +202,14 @@ a:focus, a:hover {
 .thumbnail img {
 	display: block;
 	border: 0;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+.thumbnail img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .thumbnail #pop {
@@ -245,33 +221,34 @@ a:focus, a:hover {
 .footer {
 	background: #001727 url('images/footer-colors.gif') repeat-x;
 	color: #aaa;
-	overflow: hidden;
 }
 
 .footer #innards {
 	background: url('images/koch-footer.PNG') no-repeat center top;
 	width: 960px;
 	overflow: auto;
-	margin: 0 auto;	
+	margin: 0 auto 60px;	
 }
 
 .footer #text1{
-	float: left;
-	width: 300px;
-	margin: 40px 0 20px;
-}
-
-.footer #text2{
 	float: right;
 	text-align: right;
 	width: 300px;
-	margin: 40px 0 20px
+	margin: 40px 0 0;
+}
+
+.footer #text2{
+	float: left;
+	text-align: left;
+	width: 300px;
+	margin: 40px 0 0;
 }
 
 .footer #portrait{
-	float: right;
-	margin: 40px 0 0;
-	padding: 10px;
+	float: left;
+	margin: 10px;
+	padding: 0;
+	border: 1px solid #aaa;
 }
 
 .footer #copyrt{

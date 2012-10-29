@@ -1,0 +1,1 @@
+Doesn't handle browser size less than 960 px - footer is only as wide as the window, Koch image stops being centered, thumbnails spill over
