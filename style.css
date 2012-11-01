@@ -80,6 +80,9 @@ a:focus, a:hover {
 	text-decoration: none;
 }
 
+img {
+	display: block;
+}
 /* Begin header */
  
 .header {
@@ -129,6 +132,16 @@ a:focus, a:hover {
 
 #menu a:hover{
 	color: #ff9600;
+}
+
+/*  uslider will degrade gracefully with JS disabled */
+
+#uslider {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 60px;
+	height: 300px;
+	overflow: hidden;
 }
 
 /*  Begin CSS for uslider by http://www.class.pm/ */
@@ -191,9 +204,8 @@ a:focus, a:hover {
 	box-shadow: 0 5px 20px -5px #000;
 }
 .thumbnail img {
-	display: block;
 	border: 0;
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
 }
@@ -224,6 +236,10 @@ a:focus, a:hover {
 
 #lightbox p {
 	color:#ccc;
+}
+
+#lightbox img {
+	display: inline;
 }
 
 /* End lightbox */
