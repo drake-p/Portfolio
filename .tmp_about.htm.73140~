@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  		<link href="icon.ico" rel="SHORTCUT ICON">
 		
         <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
         <link href="style.css" rel="STYLESHEET" type="text/css">
@@ -24,7 +25,6 @@
             <div id="innards">
                 <div id="menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
                         <li><a href="#featuretext">About</a></li>
                         <li><a href="#gallery">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -36,7 +36,7 @@
                     <li><img src="images/slider3.jpg" /></li>
                 </ul>
                 <div id="featuretext">
-                    <h3><img src="images/triangle.png" />ABOUT POIESIS</h3>
+                    <h3>ABOUT POIESIS</h3>
 					<p>... pronounced 'poy-EY-sis', from Greek <i>&pi;&omicron;&iota;&epsilon;&sigma;&iota;&sigmaf;</i>, "making, creation, production"</p>
                     <div class="column">
                         <em>Thinking on both sides of the brain.</em>
@@ -54,16 +54,16 @@
                 <div id="gallery">
                     <h2>Recent projects</h2>
                     <div class="thumbnail">
-                        <a href="http://www2.gvsu.edu/writers" class="lightbox_trigger" target="_blank"><img src="images/thumb-wc.png" alt="Writers' Club site" width="204px" height="204px"/></a>
+                        <a href="images/ss-wc.jpg" class="lightbox_trigger" title="Writers' Club of Grand Valley; Fall 2011 - present"><img src="images/thumb-wc.png" alt="Writers' Club site" width="204px" height="204px"/></a>
                     </div>
                     <div class="thumbnail">
-                        <a href="images/ss-acs.jpg" class="lightbox_trigger"><img src="images/thumb-acs.jpg" alt="advanced coffee service" width="204px" height="204px"/></a>
+                        <a href="images/ss-acs.png" class="lightbox_trigger" title="Advanced Coffee Service; Summer 2010; Paid work for a local business."><img src="images/thumb-acs.jpg" alt="advanced coffee service" width="204px" height="204px"/></a>
                     </div>
                     <div class="thumbnail">
-                        <a href="#" class="lightbox_trigger"><img id="pop" src="images/thumb-cs.png" alt="classics society button" width="204px" height="283" /></a>
+                        <a href="images/cs.png" class="lightbox_trigger" title="GV Classics Society; Spring 2011; T-shirt and button design"><img id="pop" src="images/thumb-cs.png" alt="classics society button" width="204px" height="283" /></a>
                     </div>
                     <div class="thumbnail">
-                        <a href="#" class="lightbox_trigger"><img src="images/thumb-ROOI.jpg" alt="Running Out of Ink publication ad" width="204px" height="204px"/></a>
+                        <a href="images/ROOI.jpg" class="lightbox_trigger" title="Writers' Club of Grand Valley; Fall 2012; Ads for submissions to our semiannual publication, Running Out of Ink"><img src="images/thumb-ROOI.jpg" alt="Running Out of Ink publication ad" width="204px" height="204px"/></a>
                     </div>
                     <div class="thumbnail">
                         <a href="#" class="lightbox_trigger" ><img src="images/thumb-journal.jpg" alt="handbound leather journal" width="204px" height="204px" /></a>
