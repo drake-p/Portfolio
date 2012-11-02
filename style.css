@@ -2,12 +2,8 @@
  * This site uses the following tools:
  * 
  * 1. Responsive grid layout by Graham R. Miller at http://www.responsivegridsystem.com/
- *    Shared under a Creative Commons Attribution 3.0 license (http://creativecommons.org/licenses/by/3.0/)
- *    
  * 2. Uslider image slider by Marius Stanciu-Sergiu at http://www.class.pm/ - modified to degrade gracefully with JS disabled
- * 
- * 3. Super simple lightbox by Jim Nielson at http://webdesign.tutsplus.com
- * 
+ * 3. Lightweight lightbox by Jim Nielson at http://webdesign.tutsplus.com
  */
 
 /*
@@ -52,6 +48,16 @@
          url('museo-font/Museo500-Regular-webfont.ttf') format('truetype'),
          url('museo-font/Museo500-Regular-webfont.svg#Museo700Regular') format('svg');
     font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('museo-font/Museo700-Regular-webfont.eot');
+    src: url('museo-font/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-font/Museo700-Regular-webfont.woff') format('woff'),
+         url('museo-font/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('museo-font/Museo700-Regular-webfont.svg#Museo700Regular') format('svg');
+    font-weight: 700;
 }
 
 /* Begin main style */
