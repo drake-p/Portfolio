@@ -1,4 +1,12 @@
 /*
+ * This site uses the following tools:
+ * 
+ * 1. Responsive grid layout by Graham R. Miller at http://www.responsivegridsystem.com/
+ * 2. Uslider image slider by Marius Stanciu-Sergiu at http://www.class.pm/ - modified to degrade gracefully with JS disabled
+ * 3. Lightweight lightbox by Jim Nielson at http://webdesign.tutsplus.com
+ */
+
+/*
  * Web Fonts from fontspring.com
  *
  * All OpenType features and all extended glyphs have been removed.
@@ -83,6 +91,57 @@ a:focus, a:hover {
 img {
 	display: block;
 }
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
 /* Begin header */
  
 .header {
@@ -103,7 +162,7 @@ img {
 /* Begin content */
 
 .container {
-	background: url('images/koch-content.png') no-repeat center bottom;
+	/*background: url('images/koch-content.png') no-repeat center bottom;*/
 }
 
 .container #innards{
@@ -134,7 +193,7 @@ img {
 	color: #ff9600;
 }
 
-/*  uslider will degrade gracefully with JS disabled */
+/*  Begin uslider */
 
 #uslider {
 	list-style: none;
@@ -143,8 +202,6 @@ img {
 	height: 300px;
 	overflow: hidden;
 }
-
-/*  Begin CSS for uslider by http://www.class.pm/ */
 
 .slide-wrapper {
     padding:0;
@@ -162,8 +219,8 @@ img {
 .uslider-vertical-slider > li {
     position:absolute;
     margin:0;
-    padding:0 1px 0;
-    background:white;
+    padding: 0 1px 0;
+    background: #ccc;
     width:500px;
 }
 .uslider-vertical-slider > li img {
@@ -195,7 +252,7 @@ img {
 .thumbnail{
 	position: relative;
 	float: left;
-	margin: 12px;
+	margin: 11px;
 	padding: 5px;
 	width: 204px;
 	height: 204px;
@@ -221,7 +278,7 @@ img {
 	top: -60px;
 }
 
-/* Lightbox modified from webdesign.tuts */
+/* Begin lightbox */
 
 #lightbox {
     position:fixed;
@@ -252,8 +309,8 @@ img {
 .footer #innards {
 	background: url('images/koch-footer.PNG') no-repeat center top;
 	width: 960px;
-	overflow: auto;
-	margin: 0 auto 60px;	
+	overflow: hidden;
+	margin: 0 auto 60px;
 }
 
 .footer #text1{
@@ -282,4 +339,14 @@ img {
 	background-color: #00090f;
 	text-align: center;
 	color: #82828d;
+}
+
+.test {
+	
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(images/overlay.png) repeat;
 }

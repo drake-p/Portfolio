@@ -1,3 +1,6 @@
 Doesn't handle browser size less than 960 px - footer is only as wide as the window, Koch image stops being centered, thumbnails spill over
+ -> responsive layout -- never have horizontal scrollbar
 
 Slider appears in front of lightbox when page is scrolled upward
+
+Really, really want ESC key to work in lightbox
