@@ -51,12 +51,6 @@
 }
 
 @font-face {
-    font-family: 'Museo';
-    src: url('museo-font/Museo700-Regular-webfont.eot');
-    src: url('museo-font/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('museo-font/Museo700-Regular-webfont.woff') format('woff'),
-         url('museo-font/Museo700-Regular-webfont.ttf') format('truetype'),
-         url('museo-font/Museo700-Regular-webfont.svg#Museo700Regular') format('svg');
     font-weight: 700;
 }
 
