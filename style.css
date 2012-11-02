@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a {
-	color: #ff9600;
+	color: darkorange;
 	text-decoration: underline;
 }
 
@@ -87,6 +87,7 @@ img {
 .header {
 	background: #001727 url('images/header-colors.gif') repeat-x bottom;
 	border-top: 10px solid #00090f;
+	min-width: 960px;
 }
 
 .header #innards{
@@ -113,7 +114,7 @@ img {
 
 #menu{
   list-style: none;
-  margin: 0 0 20px;
+  margin: 20px 0;
   padding: 0;
   text-align: center;
 }
@@ -125,14 +126,16 @@ img {
   display: inline-block;
   padding: 5px 50px;
   text-decoration: none;
-  color: #a7a8b6;
+  color: darkgoldenrod;
+  /*color: #ff9600;*/
+  /*color: #955800;*/
   text-transform: uppercase;
 }
 
-#menu a:hover{
-	color: #ff9600;
-}
 
+#menu a:hover{
+	color: #a7a8b6;
+}
 /*  Begin uslider */
 
 #uslider {
@@ -141,6 +144,9 @@ img {
 	margin: 0 0 60px;
 	height: 300px;
 	overflow: hidden;
+	border: 2px solid #001727;
+	border-left: 0;
+	box-shadow: 0 5px 20px -5px #000;
 }
 
 .slide-wrapper {
@@ -159,8 +165,8 @@ img {
 .uslider-vertical-slider > li {
     position:absolute;
     margin:0;
-    padding: 0 1px 0;
-    background: #ccc;
+    padding: 0 2px 0;
+    background: #001727;
     width:500px;
 }
 .uslider-vertical-slider > li img {
@@ -173,15 +179,16 @@ img {
 
 #featuretext {
 	margin: 0 0 20px;
-	color: #898989;
 }
 
 .columns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
+  line-height: 1.4em;
+	color: #898989;
 }
 
-#featuretext em {
+.columns em {
 	color: #001727;
 	font-style: normal;
 }
@@ -189,6 +196,7 @@ img {
 #gallery {
 	width: 100%;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
 
 .thumbnail{
@@ -226,6 +234,7 @@ img {
     position:fixed;
     top:0;
     left:0;
+	z-index:10; /* set lightbox above slider */
     width:100%;
     height:100%;
     background:url(images/overlay.png) repeat;
@@ -246,6 +255,7 @@ img {
 .footer {
 	background: #001727 url('images/footer-colors.gif') repeat-x;
 	color: #aaa;
+	min-width: 960px;
 }
 
 .footer #innards {
