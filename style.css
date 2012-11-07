@@ -40,21 +40,12 @@
     font-weight: 300;
 }
 
-@font-face {
-    font-family: 'Museo';
-    src: url('museo-font/Museo500-Regular-webfont.eot');
-    src: url('museo-font/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('museo-font/Museo500-Regular-webfont.woff') format('woff'),
-         url('museo-font/Museo500-Regular-webfont.ttf') format('truetype'),
-         url('museo-font/Museo500-Regular-webfont.svg#Museo700Regular') format('svg');
-    font-weight: 500;
-}
-
 /* Begin main style */
 
 body {
 	background-image: url(images/noise.jpg);
-	font-family: Helvetica, Verdana, Geneva, Arial, sans-serif;
+	font-family: Museo, Helvetica, Verdana, Geneva, Arial, sans-serif;
+	font-weight: 300;
 	color: #001727;
 	margin: 0;
 }
@@ -65,8 +56,8 @@ h1, h2, h3, h4, h5, h6, a, p, ol, ul, dl {
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: Museo;
-	font-weight: 500;
+	font-family: Megrim;
+	text-transform: lowercase;
 }
 
 a {
@@ -98,6 +89,7 @@ img {
 .header h1{
 	font-size: 60px;
 	font-family: Megrim;
+	font-weight: normal;
 }
 
 /* Begin content */
@@ -126,7 +118,7 @@ img {
   display: inline-block;
   padding: 5px 50px;
   text-decoration: none;
-  color: darkgoldenrod;
+  /*color: darkgoldenrod;
   /*color: #ff9600;*/
   /*color: #955800;*/
   text-transform: uppercase;
