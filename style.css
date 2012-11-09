@@ -95,7 +95,7 @@ img {
 /* Begin content */
 
 .container {
-	/*background: url('images/koch-content.png') no-repeat center bottom;*/
+	background: url('images/koch-content.png') no-repeat center bottom;
 }
 
 .container #innards{
@@ -170,12 +170,16 @@ img {
 /* End uslider */
 
 #featuretext {
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 
 .columns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 30px;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
   line-height: 1.4em;
 	color: #898989;
 }
@@ -189,6 +193,19 @@ img {
 	width: 100%;
 	overflow: hidden;
 	padding-bottom: 20px;
+}
+
+.blurb {
+	text-align: right;
+	float: right;
+	margin: 10px 0 50px;
+	padding-left: 50%;
+	color: #898989;
+}
+
+.blurb em{
+	color: #001727;
+	font-style: normal;
 }
 
 .thumbnail{
