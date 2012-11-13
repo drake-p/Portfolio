@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<link rel="icon" href="tri.ico" type="image/ico" />
 		
         <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
         <link href="style.css" rel="STYLESHEET" type="text/css">
@@ -12,6 +11,7 @@
 		<script src="lightbox.js" type="text/javascript"></script>
         <script src="jquery.uslider.js" type="text/javascript"></script>
         
+  		<link href="icon.ico" type="shortcut icon">
 		<title>Poiesis Design</title>
 		
     </head>
