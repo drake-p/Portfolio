@@ -29,12 +29,9 @@
 
  @font-face {font-family:
     'Museo';
-    src:
-    url('museo-font/Museo300-Regular-webfont.eot');
-    src:
-    url('museo-font/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('museo-font/Museo300-Regular-webfont.woff') format('woff'), url('museo-font/Museo300-Regular-webfont.ttf') format('truetype'), url('museo-font/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
-    font-weight:
-    300;
+    src: url('museo-font/Museo300-Regular-webfont.eot');
+    src: url('museo-font/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('museo-font/Museo300-Regular-webfont.woff') format('woff'), url('museo-font/Museo300-Regular-webfont.ttf') format('truetype'), url('museo-font/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: 300;
 }
 
 /* MAIN STYLE */
@@ -45,7 +42,9 @@ body {
     font-weight: 300;
     color: #001727;
     margin: 0;
+	padding: 0;
 }
+
 
 h1, h2, h3, h4, h5, h6, a, p, ol, ul, dl {
     margin: 0;
@@ -80,32 +79,48 @@ img {
     margin: 0;
     padding: 0;
     text-align: center;	
-    background-color: #00090f;
+	background-color: #373c40;
+	border-bottom: 2px solid #b86c00;
+}
+#menu ul {
+	padding: 0;
 }
 
 #menu li {
     display: inline;
-    font: 300 24px Museo;
+    font: 300 22px Museo;
+	margin: 0;
+	padding: 0;
 }
 
 #menu a {
+	padding: 5px;
+	margin: 0;
     display: inline-block;
-    padding: 0 50px;
     text-decoration: none;
-	color: #a05e00;
-    text-transform: uppercase;
+	color: #b86c00;
+    text-transform: lowercase;
+	width: 120px;
 }
 
 #menu a:hover {
     color: #a7a8b6;
 }
-
+#tri {
+	position: fixed;
+	width: 100%;
+	top: 34px;
+	z-index: 100;
+	background: url(images/tri.png) no-repeat center bottom;
+	height: 12px;
+}
 
 /* HEADER */
 
 .header {
-    background: #001727 url('images/header-colors.gif') repeat-x bottom;
+    background: #001727 url('images/stripes.gif') repeat;
 	padding-top: 50px;
+	min-width: 960px;
 }
 
 
@@ -120,12 +135,12 @@ img {
     font-size: 60px;
     font-family: Megrim;
     font-weight: normal;
+	text-shadow: 0.05em 0.05em 0.2em black;
 }
 
-/* CONTENT */
 .container {
-    min-width: 960px;
-    background: url('images/koch-content.png') no-repeat center bottom;
+	min-width: 960px;
+	background: url(images/koch-content.png) no-repeat center bottom;
 }
 
 .container #innards {
@@ -138,11 +153,9 @@ img {
 #uslider {
     list-style: none;
     padding: 0;
-    margin: 80px 0 60px;
+    margin: 50px 0 0;
     height: 300px;
     overflow: hidden;
-    border: 2px solid #001727;
-    border-left: 0;
     box-shadow: 0 5px 20px -5px #000;
 }
 
@@ -164,8 +177,8 @@ img {
 .uslider-vertical-slider > li {
     position: absolute;
     margin: 0;
-    padding: 0 2px 0;
-    background: #001727;
+    padding: 0;
+    background: #955800;
     width: 500px;
 }
 
@@ -176,7 +189,7 @@ img {
 }
 
 #featuretext {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .columns {
@@ -198,7 +211,7 @@ img {
 #gallery {
     width: 100%;
     overflow: hidden;
-	padding-top: 80px;
+	padding-top: 50px;
 }
 
 .blurb {
@@ -267,9 +280,27 @@ img {
     display: inline;
 }
 
+#lbleft {
+	position: fixed;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 50px;
+	background-color: #000;
+}
+
+#lbright {
+	position: fixed;
+	right: 0;
+	top:0;
+	height: 100%;
+	width: 50px;
+	background-color: #000;
+}
+
 .footer {
-    background: #001727 url('images/footer-colors.gif') repeat-x;
-    color: #aaa;
+	background: #001727 url('images/footer-colors.gif') repeat-x;
+	color: #aaa;
     min-width: 960px;
 }
 
@@ -277,21 +308,20 @@ img {
     background: url('images/koch-footer.PNG') no-repeat center top;
     width: 960px;
     overflow: hidden;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+	padding: 80px 0 60px;
 }
 
 .footer #text1 {
     float: right;
     text-align: right;
     width: 300px;
-    margin: 40px 0 0;
 }
 
 .footer #contact {
     float: left;
     text-align: left;
     width: 300px;
-    margin: 40px 0 0;
 }
 
 .footer #portrait {
@@ -303,7 +333,7 @@ img {
 
 .footer #copyrt {
     padding: 10px 0;
-    background-color: #00090f;
-    text-align: center;
-    color: #82828d;
-}
+	background-color: #00090f;
+	text-align: center;
+	color: #82828d;
+	}
