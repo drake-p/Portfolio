@@ -30,13 +30,13 @@ $(document).keyup(function(e) {
 	//LEFTARROW
     else if (e.keyCode == 37) {
 		if (!$('.current').is($('.lightbox_trigger').first())){
-			$('.current').removeClass('current').prev().click();
+			$('.current').removeClass('current').prevAll('.lightbox_trigger').first().click();
 		}
     }
 	//RIGHTARROW
     else if (e.keyCode == 39) {
 		if (!$('.current').is($('.lightbox_trigger').last())) {
-			$('.current').removeClass('current').next().click();
+			$('.current').removeClass('current').nextAll('.lightbox_trigger').first().click();
 		}
 	}
 	
