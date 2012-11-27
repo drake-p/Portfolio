@@ -1,5 +1,4 @@
-$(document).ready(
-	function($) {
+jQuery(document).ready(function($) {
     $("#lightbox").hide();
     
     // Show lightbox on thumbnail click
@@ -17,9 +16,4 @@ $(document).ready(
     $('#lightbox').live('click', function() { 
         $('#lightbox').fadeOut(500);
     });
-	$(document).keyUp(function(event) {
-		if(event.keyCode == 27){
-        	$('#lightbox').fadeOut(500);
-		};
-	});
 });

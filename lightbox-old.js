@@ -13,10 +13,6 @@ jQuery(document).ready(function($) {
         });
     });
 	
-	// Advance lightbox
-	$('#lbleft').click(function() {
-		
-	})
 	
 	// Close lightbox
     $('#lightbox').live('click', function() { 
