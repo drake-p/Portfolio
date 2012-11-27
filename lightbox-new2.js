@@ -29,19 +29,13 @@ $(document).keyup(function(e) {
     }
 	//LEFTARROW
     else if (e.keyCode == 37) {
-		if ($('.current').is($('.lightbox_trigger').first())){
-			alert($('.lightbox-trigger:last').attr("title"));
-		}
-		else {
-			$('.current').removeClass('current').prevAll('.lightbox-trigger').last().click();
+		if (!$('.current').is($('.lightbox_trigger').first())){
+			$('.current').removeClass('current').prev().click();
 		}
     }
 	//RIGHTARROW
     else if (e.keyCode == 39) {
-		if ($('.current').is($('.lightbox_trigger').last())) {
-			alert($('.lightbox-trigger').first().attr("title"));
-		}
-		else {
+		if (!$('.current').is($('.lightbox_trigger').last())) {
 			$('.current').removeClass('current').next().click();
 		}
 	}
