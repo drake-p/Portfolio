@@ -14,36 +14,12 @@ $(document).ready(
 		});
     });
         
-    // Close lightbox from various clicks, excluding next/prev
-    $('#lightbox #close').live('click', function() { 
+    // Close lightbox
+	$('#lightbox').live('click', function() {
         $('#lightbox').fadeOut(500);
 		$('.current').removeClass('current');
-    });
-	
-	$('#lightbox').live('click', function() {
-		if(event.target != this){
-			return true;
-		}
-		$('#lightbox #close').click();
 	});
-	
-	$('#lightbox img').live('click', function() {
-		$('#lightbox #close').click();
-	});
-	
-	// Navigate lightbox
-	$('#lightbox #left').live('click', function() {
-		if (!$('.current').is($('.lightbox_trigger').first())){
-			$('.current').removeClass('current').prevAll('.lightbox_trigger').first().click();
-		}
-	});
-	
-	$('#lightbox #right').live('click', function(){
-		if (!$('.current').is($('.lightbox_trigger').last())) {
-			$('.current').removeClass('current').nextAll('.lightbox_trigger').first().click();
-		}
-	})
-	});
+});
 
 // Keyboard navigation
 $(document).keyup(function(e) {
@@ -53,10 +29,14 @@ $(document).keyup(function(e) {
     }
 	//LEFTARROW
     else if (e.keyCode == 37) {
-		$('#lightbox #left').click();
+		if (!$('.current').is($('.lightbox_trigger').first())){
+			$('.current').removeClass('current').prevAll('.lightbox_trigger').first().click();
+		}
     }
 	//RIGHTARROW
     else if (e.keyCode == 39) {
-		$('#lightbox #right').click();
+		if (!$('.current').is($('.lightbox_trigger').last())) {
+			$('.current').removeClass('current').nextAll('.lightbox_trigger').first().click();
+		}
 	}
 });
