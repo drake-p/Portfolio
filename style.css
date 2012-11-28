@@ -1,11 +1,8 @@
 /*
- * This site uses the following tools:
- *
- * 1. Uslider image slider by Marius Stanciu-Sergiu at http://www.class.pm/ - modified to degrade gracefully with JS disabled
- * 2. Lightweight lightbox by Jim Nielson at http://webdesign.tutsplus.com
+ * This site uses the Uslider image slider by Marius Stanciu-Sergiu at http://www.class.pm/ - modified to degrade gracefully with JS disabled
  *
  *===============================================================================================================
- * Web Fonts from fontspring.com
+ * Museo - Web Fonts from fontspring.com
  *
  * All OpenType features and all extended glyphs have been removed.
  * Fully installable fonts can be purchased at http://www.fontspring.com
@@ -38,7 +35,7 @@
 
 body {
     background-image: url(images/noise.jpg);
-    font-family: Museo, Helvetica, Verdana, Geneva, Arial, sans-serif;
+    font-family: Museo, serif;
     font-weight: 300;
     color: #001727;
     margin: 0;
@@ -52,7 +49,7 @@ h1, h2, h3, h4, h5, h6, a, p, ol, ul, dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Megrim;
+    font-family: Megrim, sans-serif;
     text-transform: lowercase;
 }
 
@@ -133,8 +130,8 @@ img {
 
 .header h1 {
     font-size: 60px;
-    font-family: Megrim;
     font-weight: normal;
+	font-family: Megrim, Museo, script;
 	text-shadow: 0.05em 0.05em 0.2em black;
 }
 
@@ -268,35 +265,22 @@ img {
     height: 100%;
     background: url(images/overlay.png) repeat;
     text-align: center;
-    color: #fff;
+    color: #888;
 }
 
-#lightbox p {
-    color: #ccc;
-	padding-bottom: 30px;
+#lightbox #content {
+	color: #ddd;
 }
 
 #lightbox img {
     display: inline;
 }
 
-#lbleft {
-	position: fixed;
-	left: 0;
-	top:0;
-	height: 100%;
-	width: 50px;
-	background-color: #000;
+#lightbox div {
+	padding: 10px 0;
+	display: inline-block;
 }
 
-#lbright {
-	position: fixed;
-	right: 0;
-	top:0;
-	height: 100%;
-	width: 50px;
-	background-color: #000;
-}
 
 .footer {
 	background: #001727 url('images/footer-colors.gif') repeat-x;
